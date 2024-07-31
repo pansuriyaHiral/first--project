@@ -1,3 +1,3 @@
 # first--project
 hello world i am using git
-i will tray my best
+i will try my best
