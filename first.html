@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body {
+        background-color: aqua;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .comment-box {
+        background-color: skyblue;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(red, green, blue, alpha);
+    }
+
+    .comment-title {
+        font-size: 35px;
+        text-align: start;
+        margin-bottom: 30px;
+        color: rgb(10, 8, 8);
+        border-radius: 5px;
+        border-color: black;
+        border: none;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: black;
+
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        transition: background-color 0.3s;
+        background-color: lightgrey;
+        color: black;
+    }
+
+    .btn-submit {
+        background-color: lightgray color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-submit:hover {
+        background-color: green;
+    }
+
+    .comment-box grdieant-bg {
+        box-shadow: inset;
+        list-style: lower-alpha;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="comment-box grdieant-bg">
+            <h2 class="comment title">join the conversetion</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" id="email" name="email" placeholder="enter your id">
+                </div>
+                <div class="form-group">
+                    <label for="comment">comment</label>
+                    <textarea id="comment" id="comment" name="comment" placeholder="Type your comment here"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
