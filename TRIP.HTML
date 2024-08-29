@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    .bg-image {
+
+
+        z-index: -9997;
+        position: absolute;
+        filter: brightness(0.25);
+    }
+
+    .container {
+        position: relative;
+        padding: 10px;
+        width: 140%;
+
+
+
+    }
+
+    .toolbar {
+        border-color: #777171;
+        color: white;
+        box-sizing: border-box 20px;
+        margin-right: 55px;
+        padding-left: 10px;
+        padding-right: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        transition: 0.3s solid white;
+        cursor: pointer;
+        display: inline-block;
+        justify-content: space-between;
+
+
+    }
+
+
+
+    span:hover {
+        border-bottom: solid white;
+
+    }
+
+
+
+    .button {
+
+        color: white;
+        background: linear-gradient(to top right, purple, red);
+        border-radius: 20px;
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        transition: 0.5s;
+        cursor: pointer;
+
+
+
+    }
+
+    .button :hover {
+        box-shadow: 0px 0px 13px 1px rgb(150, 8, 8);
+        border-radius: 5px;
+        color: aliceblue;
+        background-color: solid whitesmoke;
+    }
+
+    .h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        font-size: 25px;
+        font-weight: bolder;
+        color: aliceblue;
+        padding-left: 22%;
+        padding-top: 10%;
+
+    }
+
+    .h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        font-size: 10px;
+        color: azure;
+        padding-left: 25%;
+        padding-top: 1%;
+
+
+
+    }
+
+    .search-container {
+        margin-left: 25%;
+        margin-top: 10px;
+        position: relative;
+
+    }
+
+    .container-box {
+
+        position: relative;
+        margin-left: 15%;
+        margin-right: 5px;
+
+        padding-top: 10px;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40px;
+        height: 30px;
+        border: 0px solid gray;
+        justify-content: space-between;
+        color: white;
+        background-color: rgb(43, 41, 41);
+
+
+    }
+
+    .name {
+
+        color: white;
+        padding-top: 10px;
+        font-size: 0.4rem;
+        position: absolute;
+        bottom: 10%;
+        left: 10;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+
+        <img class="bg-image" src="./img.jpg.png" />
+
+
+
+        <span class="toolbar">HOME</span>
+        <span class="toolbar">PACKAGES</span>
+        <span class="toolbar">SHOP</span>
+        <span class="toolbar">ABOUT US</span>
+        <span class="toolbar">NEWS</span>
+        <span class="toolbar">CONTECT</span>
+
+        <div class="button">BOOKNOW</div>
+
+        <div class="h1 ">Search your next holiday</div>
+        <div class="h2"> CHECK OUR BEST PROMOTIONS</div>
+        <div class="search-container">
+            <input placeholder="eg. Goa" />
+            <button>Search</button>
+        </div>
+    </div>
+    <div>
+        <div class="container-box">
+            <i class="fa-solid fa-person-snowboarding"></i>
+            <span class="name">SPORT</span>
+        </div>
+        <div class="container-box">
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+            <span class="name">RELAX</span>
+        </div>
+        <div class="container-box">
+            <i class="fa-solid fa-camera"></i>
+            <span class="name">HISTORY</span>
+        </div>
+        <div class="container-box">
+            <i class="fa-solid fa-hands-praying"></i>
+            <span class="name">CULTUR</span>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
