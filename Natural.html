@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICECREAM</title>
+    <link rel="stylesheet" href="./Natural.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .div {
+        display: block;
+        unicode-bidi: isolate;
+    }
+
+    .block1 {
+        position: relative;
+    }
+
+    .header {
+        background-color: #191919;
+        color: white;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        gap: 5%;
+        font-weight: bold;
+        font-size: 1.2em;
+        cursor: default;
+
+    }
+
+    .line {
+        cursor: pointer;
+
+    }
+
+    .line:hover {
+        color: green;
+    }
+
+    .search-input {
+        border: none;
+        outline: none;
+    }
+
+    .search-container {
+        background-color: white;
+        border: 1px solid gray;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        overflow: hidden;
+        padding-left: 20px;
+        flex: 1;
+    }
+
+    .search-icon {
+        background-color: gray;
+        color: white;
+        height: 30px;
+        width: 30px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 2.5em;
+        color: orangered;
+
+    }
+
+    .image-1 {
+        object-fit: cover;
+        height: 626px;
+        width: 100%;
+    }
+
+    img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        overflow-x: auto;
+        overflow-y: auto;
+
+    }
+
+    .name {
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 2em;
+        padding-top: 27px;
+        padding-left: 36px;
+
+
+
+    }
+
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+    }
+
+    .models {
+        width: 100%;
+        height: 300px;
+
+        overflow: scroll;
+        display: flex;
+    }
+
+    .models h3 {
+        padding-left: 10%;
+
+        margin-top: 5px;
+        margin-left: 20px;
+
+
+    }
+
+    .img2 {
+
+        margin-top: 40px;
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+
+
+
+
+
+    }
+
+
+    .id {
+        display: block;
+        font-size: 1em;
+        margin-top: 5px;
+        cursor: pointer;
+
+
+    }
+
+    .id:hover {
+        color: green;
+
+    }
+
+    .block2 {
+        width: 100%;
+        height: 750px;
+        display: flex;
+    }
+
+    .inner1 {
+        width: 100%;
+        height: 750px;
+        display: 1;
+    }
+
+    .inner1 img {
+        width: 80%;
+        height: 650px;
+        object-fit: cover;
+        margin-left: 60px;
+        margin-top: 55px;
+    }
+
+    .inner2 {
+        width: 50%;
+        height: 750px;
+        display: 1;
+    }
+
+    .inner2 h1 {
+        font-size: 40px;
+        font-weight: normal;
+        font-family: sans-serif;
+        padding-top: 300px;
+        padding-left: 0px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .inner2 h2 {
+        color: orangered;
+        font-size: 2em;
+    }
+
+    .inner2 button {
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        background-color: black;
+        margin-left: 0px;
+        cursor: pointer;
+
+    }
+
+    .button {
+        height: 63px;
+        width: 175px;
+        color: white;
+
+    }
+
+    .block3 {
+        width: 100%;
+        height: 600px;
+
+
+        position: relative;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+
+    .titlebar {
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 3em;
+        padding-top: 27px;
+        padding-left: 10%;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    .ingredent {
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .details {
+        font-size: 2em;
+        margin: 10px 0;
+    }
+
+    .p {
+        font-size: 1.5em;
+        color: black;
+
+
+
+    }
+
+    .footer {
+        height: 500px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .list {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .list:hover {
+        color: red;
+    }
+
+    .head {
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        unicode-bidi: isolate;
+    }
+
+    .list ul {
+        list-style-type: none;
+        color: white;
+        font-family: sans-serif;
+        float: left;
+        padding-top: 5px;
+        line-height: .8cm;
+        padding-left: 200px;
+        padding-right: 100px;
+    }
+
+    .footer2 {
+        height: 50px;
+
+        width: 100%;
+        background-color: black;
+
+
+    }
+
+    .icon2 {
+        display: inline-block;
+        font-size: 2em;
+        color: white;
+
+        margin-left: 12%;
+        gap: 10px;
+        cursor: pointer;
+
+
+
+
+    }
+
+    .icon2:hover {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="logo"><i class="fa-solid fa-ice-cream"></i></div>
+
+        <div class="line">Products<i class="fa-solid fa-chevron-down"></i></div>
+        <div class="line">Our Legancy</div>
+        <div class="line">Malai Magic</div>
+        <div class="line">Store Locator</div>
+        <div class="line">Blogs</div>
+        <div class="search-container">
+            <input placeholder="I am looking for..." class="search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+    </div>
+    <div class="block1">
+        <img class="image-1" src="./Banner-02-new.jpg">
+    </div>
+    <h1 class="name">
+        <u>BEST SELLERS</u>
+    </h1>
+    <div class="models">
+        <div>
+            <img class="img2" src="./choco.jfif">
+            <h3 class="id">CHOCO ICECREAM</h3>
+        </div>
+        <div>
+            <img class="img2" src="./coconut.jfif">
+            <h3 class="id">TENDER COCONUT ICECREAM</h3>
+        </div>
+        <div>
+            <img class="img2" src="./kesar-pista.jfif">
+            <h3 class="id">KESAR-PISTA ICECREAM</h3>
+        </div>
+        <div>
+            <img class="img2" src="./sitafal.jfif">
+            <h3 class="id">SITAFAL ICECREAM</h3>
+        </div>
+        <div>
+            <img class="img2" src="./mango.jfif">
+            <h3 class="id">MANGO ICECREAM</h3>
+        </div>
+        <div>
+            <img class="img2" src="./Straw.berry.jfif">
+            <h3 class="id">STRAWBERRY ICECREAM</h3>
+        </div>
+    </div>
+    <div class="block2">
+        <div class="inner1">
+            <img src="./label2.jpg">
+        </div>
+        <div class="inner2">
+            <h1> DISCOVER THE ORIGINAL FLAVOUR WITH A SCOOP OF</h1>
+            <h2><u>NATURAL ICE CREAM</u></h2>
+            <button class="button">
+                Explore More
+            </button>
+        </div>
+    </div>
+    <div class="block3">
+
+        <h1 class="titlebar"><u>INGREDIENT STORY</u></h1>
+        <div class="ingredient">
+            <div class="icon">
+                <i class="fa-regular fa-cherries"></i>
+            </div>
+            <h2 class="details">1.FRUITS</h2>
+            <p class="p">Fruit is in the DNA of Naturals ice cream. It’s what makes our ice creams unique and original.
+                We go to
+                great lengths to source fresh fruits only from their most popular locations. Fruits that are freshly
+                plucked from farms which eventually end up into freshly served scoops of delicious Naturals ice cream.
+
+            </p>
+        </div>
+        <div class="ingredient">
+            <div class="icon">
+                <i class="fa-sharp fa-thin fa-jug"></i>
+            </div>
+            <h2 class="details">2.MILK</h2>
+            <p class="p">
+                Milk is a key ingredient in ice cream. And the milk that goes into Naturals ice cream comes from the
+                same vendor that we started doing business with, around three decades ago. This makes our ice creams
+                rich, creamy and most importantly, consistent
+
+
+            </p>
+        </div>
+
+        <div class="ingredient">
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-bowl-spoon"></i>
+            </div>
+            <h2 class="details"> 3.SUGAR</h2>
+            <P class="p">
+                We use pharma sugar, which is so fine and pure that it’s certified to be used even in medicines. Because
+                we make sure only the best makes its way into our scoops
+            </P>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="list">
+            <ul>
+                <li class="head">ABOUT NATURALS</li>
+                <br>
+
+                <li>Ingredient Story</li>
+                <li>Our Legacy</li>
+                <li>Quaries</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="head">OTHERS</li>
+                <br>
+
+                <li>Store Locator</li>
+                <li>Careers</li>
+                <li>Blogs</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="head">SHOP</li>
+                <br>
+
+                <li>Round The Year</li>
+                <li>Festive Specials</li>
+                <li>Srasonal</li>
+                <li>No added Suger</li>
+                <li>Friday Funday</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer2">
+        <span class="icon2"><i class="fa-brands fa-whatsapp"></i></span>
+
+
+        <span class="icon2"> <i class="fa-brands fa-instagram"></i></span>
+
+        <span class="icon2"><i class="fa-brands fa-facebook"></i></span>
+        <span class="icon2"><i class="fa-brands fa-youtube"></i></span>
+        <span class="icon2"><i class="fa-brands fa-twitter"></i></span>
+        <span class="icon2"> <i class="fa-brands fa-linkedin"></i></span>
+    </div>
+
+</body>
+
+</html>
