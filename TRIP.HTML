@@ -14,41 +14,58 @@
     .bg-image {
 
 
-        z-index: -9997;
+    
         position: absolute;
+        height: 800px;
+        
+        
+        
         filter: brightness(0.25);
+    }
+    .image{
+        position: relative;
     }
 
     .container {
-        position: relative;
         padding: 10px;
-        width: 140%;
+
+
+
+
+
+
+
+
+    
+
+    
 
 
 
     }
 
     .toolbar {
-        border-color: #777171;
+    
         color: white;
-        box-sizing: border-box 20px;
-        margin-right: 55px;
-        padding-left: 10px;
-        padding-right: 5px;
+       
+       margin-left: 4%;
+       margin-right:4%;
+         
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        transition: 0.3s solid white;
+       
+        transition: 0.3s solid rgb(73, 8, 8);
         cursor: pointer;
         display: inline-block;
         justify-content: space-between;
+        position: relative;
 
 
     }
 
 
 
-    span:hover {
-        border-bottom: solid white;
+    .toolbar:hover {
+       font-size: large;
 
     }
 
@@ -63,9 +80,11 @@
         padding-top: 5px;
         padding-bottom: 5px;
         font-family: Arial, Helvetica, sans-serif;
-        display: inline-block;
+        display:inline-block;
         transition: 0.5s;
         cursor: pointer;
+        position: relative;
+        margin-right: 0;
 
 
 
@@ -137,6 +156,7 @@
         position: absolute;
         bottom: 10%;
         left: 10;
+        position: relative;
     }
 </style>
 </head>
@@ -155,7 +175,7 @@
         <span class="toolbar">NEWS</span>
         <span class="toolbar">CONTECT</span>
 
-        <div class="button">BOOKNOW</div>
+        <span class="button">BOOKNOW</span>
 
         <div class="h1 ">Search your next holiday</div>
         <div class="h2"> CHECK OUR BEST PROMOTIONS</div>
